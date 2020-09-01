@@ -8,10 +8,10 @@ class Destination{
 }
 
 const List<Destination> allDestination = <Destination>[
-  Destination('Home', Icons.home,),
-  Destination('Bookings', Icons.bookmark),
-  Destination('Profile', Icons.person),
-  Destination('Wallet', Icons.account_balance_wallet),
-  Destination('Wallet', Icons.account_balance_wallet)
+  Destination('Dx', Icons.home,),
+  Destination('Plans', Icons.content_paste),
+  Destination('Rx', Icons.hourglass_full),
+  Destination('References', Icons.library_books),
+  Destination('Clinical Trails', Icons.local_hospital)
 
 ];

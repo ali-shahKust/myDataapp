@@ -12,6 +12,7 @@ class BottomNavBar extends StatefulWidget {
   _BottomNavBarState createState() => _BottomNavBarState();
 }
 
+
 class _BottomNavBarState extends State<BottomNavBar> {
 
   int _currentIndex = 0;
@@ -37,12 +38,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           currentIndex: _currentIndex,
-          selectedItemColor: Colors.black,
-          selectedLabelStyle: TextStyle(color: Colors.black),
+          selectedItemColor: Colors.white,
+          selectedLabelStyle: TextStyle(color: Colors.white),
           selectedIconTheme: IconThemeData(
-              color: Colors.black
+              color: Colors.white
           ),
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blueAccent,
           onTap: (int index){
             setState(() {
               _currentIndex = index;
@@ -51,7 +52,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
           items: allDestination.map((Destination destination){
             return BottomNavigationBarItem(
                 icon : Icon(destination.icon,),
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.white,
                 title: Text(destination.title)
             );
           }).toList()
