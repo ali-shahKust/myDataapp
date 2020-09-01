@@ -97,18 +97,21 @@ class _ClinicalTrailsState extends State<ClinicalTrails> {
                 ),
               ),
             ),
-          ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: dxData.length,
-                  itemBuilder: (ctx,i){
-                    return Card(
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(dxData[i]),
-                      ),
-                    );
-                  }
-                ),
+          Container(
+            height: MediaQuery.of(context).size.height,
+            child: ListView.builder(
+                    shrinkWrap: true,
+                    itemCount: dxData.length,
+                    itemBuilder: (ctx,i){
+                      return Card(
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Text(dxData[i]),
+                        ),
+                      );
+                    }
+                  ),
+          ),
         ],
       )
     );
